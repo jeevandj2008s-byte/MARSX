@@ -116,6 +116,7 @@ Contributions are welcome! Please open an issue first to discuss what you'd like
 
 ## Acknowledgements
 
+
 - [NASA Open APIs](https://api.nasa.gov/) for Mars scientific data
 - [OpenAI](https://openai.com/) for AI-powered mission briefings
 - [Leaflet.js](https://leafletjs.com/) for the interactive map framework
