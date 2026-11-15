@@ -34,15 +34,7 @@
 - Node.js >= 18
 - npm or yarn
 - OpenAI API key
-- NASA API key (free at [api.nasa.gov](https://api.nasa.gov))
-
-
-```bash
-git clone https://github.com/jeevandj2008s-byte/MARSX.git
-cd MARSX
-npm install
-npm run dev
-```
+- NASA API key (free at [api.nasa.gov](https://api.nasa.
 
 Open [http://localhost:3000](http://localhost:3000) in your browser to see the app.
 
