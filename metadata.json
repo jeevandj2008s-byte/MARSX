@@ -1,0 +1,6 @@
+{
+  "name": "MARS X MISSION — Mars Surface Exploration Planning System",
+  "description": "Planetary mission-control workstation for Mars surface exploration, scientific layer visualization, astronaut traverse planning, terrain analysis, and AI-assisted mission briefings.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

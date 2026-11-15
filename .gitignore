@@ -1,0 +1,41 @@
+# Dependencies
+node_modules/
+/.pnp
+.pnp.js
+
+# Production build outputs
+dist/
+build/
+coverage/
+
+# Environment files and credentials (CRITICAL: Never commit secrets)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.cert
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# Editor / OS files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Python / Test caches
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Scratch and temporary working files
+scratch/
+scratch_prompt.txt
+*.tmp
+*.bak
+*.swp
