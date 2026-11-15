@@ -82,6 +82,9 @@ A: Yes, MARSX is open-source and free under the MIT license.
 
 **Q is shreya dumb 
 
+**Q yes shreya is dumb 
+
+**Q hahahaha
 ## Roadmap
 
 - [x] Interactive Mars map
