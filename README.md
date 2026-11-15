@@ -92,11 +92,7 @@ A: Yes, a free NASA API key can be obtained at [https://api.nasa.gov](https://ap
 A: Node.js 18 or higher is recommended.
 
 **Q: Is MARSX free to use?**
-A: Yes, MARSX is open-source and free under the MIT license.
-
-**Q is shreya dumb?
-
-**Q yes shreya is dumb >>>> 
+A: Yes, MARSX is open-source and free under the  
 
 ## Roadmap
 
