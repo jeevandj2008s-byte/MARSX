@@ -3,7 +3,7 @@
 
 > AI-powered Mars mission planning at your fingertips.
 
-MARSX is the first-ever AI-powered Mars mission planner that lets users explore the planet Mars, create astronaut walking routes, calculate distances and mission durations, and generate AI-powered mission briefings using interactive maps and scientific data.
+MARSX is the first-ever AI-powered Mars mission planner that lets users explore the planet Mars, create astronaut walking routes, calculate distances and mission durations, and generate AI-powered mission briefings using interactive maps and scientific data...
 
 ## Features
 
@@ -79,6 +79,8 @@ A: Node.js 18 or higher is recommended.
 
 **Q: Is MARSX free to use?**
 A: Yes, MARSX is open-source and free under the MIT license.
+
+**Q is shreya dumb 
 
 ## Roadmap
 
