@@ -1,4 +1,6 @@
-# MARS X MISSION — Planetary Mission Control & Surface Exploration System
+# Mars X Mission
+
+Mars X Mission is an interactive Martian map built to give every astronaut an easy, safe path to explore Mars. It combines real orbital imagery, terrain and elevation data, a 3D Mars globe, and 360° surface views, so crews can plan routes across Mars, avoid obstacles and hazards, and prepare for human exploration with confidence.
 
 [![React](https://img.shields.io/badge/React-19.0-blue.svg)](https://react.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6.svg)](https://www.typescriptlang.org/)
