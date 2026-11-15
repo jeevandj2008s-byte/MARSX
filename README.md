@@ -118,3 +118,5 @@ For general questions, start a [GitHub Discussion](https://github.com/jeevandj20
 MIT © MARSX Contributors
 
 <!-- Mission note 18: The Martian year is longer than Earth's. -->
+
+<!-- Mission note 19: Mars has a reddish surface dust. -->
