@@ -16,7 +16,7 @@
 
 > Coming soon – interactive map view, route planner UI, and mission briefing panel.
 
-## Tech Stack
+## Tech 
 
 | Layer       | Technology        |
 |-------------|-------------------|
