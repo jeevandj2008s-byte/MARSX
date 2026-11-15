@@ -11,6 +11,7 @@ MARSX is an AI-powered Mars mission planner that lets users explore Mars, create
 - 📏 Distance and mission duration calculator
 - 🤖 AI-powered mission briefings
 - 🔭 Scientific data integration
+- 🌡️ Mars surface temperature display
 
 ## Screenshots
 
