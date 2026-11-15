@@ -9,7 +9,7 @@ Mars X Mission is an interactive Martian map built to give every astronaut an ea
 [![TailwindCSS](https://img.shields.io/badge/Tailwind-4.x-38B2AC.svg)](https://tailwindcss.com/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-An interactive mission-control workstation and planetary geospatial intelligence platform engineered for Mars surface exploration. **MARS X MISSION** provides astronaut EVA route planning, high-resolution orbital imagery analysis, 3D planetary observation, MOLA topographic relief, and AI-assisted mission briefings for Jezero Crater and beyond.
+An interactive mission-control workstation and planetary geospatial intelligence platform engineered for Mars surface exploration. **MARS X MISSION** provides astronaut EVA route planning, high-resolution orbital imagery analysis, 3D planetary observation, MOLA topographic relief, and AI-assisted mission briefings for mars exploration and making it easy.
 
 ---
 
