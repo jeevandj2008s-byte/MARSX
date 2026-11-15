@@ -46,6 +46,14 @@ OPENAI_API_KEY=your_openai_key_here
 NASA_API_KEY=your_nasa_key_here
 ```
 
+## Roadmap
+
+- [ ] Real-time Mars weather integration
+- [ ] Multiplayer mission planning
+- [ ] 3D terrain visualisation
+- [ ] Offline mode support
+- [ ] Mission history export (PDF/CSV)
+
 ## Contributing
 
 Contributions are welcome! Please open an issue first to discuss what you'd like to change.
