@@ -1,4 +1,5 @@
 
+
 # MARSX 🚀
 
 > AI-powered Mars mission planning at your fingertips.
@@ -145,3 +146,11 @@ MARSX is designed to bring map exploration, route planning, Mars data, and AI-ge
 5. **Prepare a briefing:** use the selected mission details to generate a natural-language briefing with the OpenAI API.
 
 The README lists these as project features, but the repository currently contains only the README file. This section describes the planned user workflow; it does not confirm that these features are implemented or runnable yet.
+
+
+## Perseverance Rover Facts
+
+- NASA’s Perseverance rover landed in Jezero Crater on February 18, 2021, to search for signs of ancient microbial life.
+- Perseverance collects and stores samples of Martian rock and soil (regolith) for possible return to Earth by a future mission.
+
+Source: [NASA’s Perseverance mission page](https://science.nasa.gov/mission/mars-2020-perseverance/).
