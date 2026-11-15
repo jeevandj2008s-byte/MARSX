@@ -2,12 +2,15 @@
 
 Mars X Mission is an interactive Martian map built to give every astronaut an easy, safe path to explore Mars. It combines real orbital imagery, terrain and elevation data, a 3D Mars globe, and 360° surface views, so crews can plan routes across Mars, avoid obstacles and hazards, and prepare for human exploration with confidence.
 
+[![Live Demo](https://img.shields.io/badge/Live_Demo-marsxmission10.vercel.app-F0942F?logo=vercel&logoColor=white)](https://marsxmission10.vercel.app/)
 [![React](https://img.shields.io/badge/React-19.0-blue.svg)](https://react.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6.svg)](https://www.typescriptlang.org/)
 [![Three.js](https://img.shields.io/badge/Three.js-WebGL-black.svg)](https://threejs.org/)
 [![OpenLayers](https://img.shields.io/badge/OpenLayers-10.4-1F6B75.svg)](https://openlayers.org/)
 [![TailwindCSS](https://img.shields.io/badge/Tailwind-4.x-38B2AC.svg)](https://tailwindcss.com/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
+> 🚀 **Live Production Site:** [https://marsxmission10.vercel.app/](https://marsxmission10.vercel.app/)
 
 An interactive mission-control workstation and planetary geospatial intelligence platform engineered for Mars surface exploration. **MARS X MISSION** provides astronaut EVA route planning, high-resolution orbital imagery analysis, 3D planetary observation, MOLA topographic relief, and AI-assisted mission briefings for mars exploration and making it easy.
 
