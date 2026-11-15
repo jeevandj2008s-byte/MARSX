@@ -1,0 +1,436 @@
+@import "tailwindcss";
+
+:root {
+  /* Mars Sunset Atmospheric Gradient Colors (Exact match to reference) */
+  --mars-bg-top: #F0942F;
+  --mars-bg-mid: #E27E27;
+  --mars-bg-deep: #D4702A;
+  --mars-bg-base: #BA581B;
+  --mars-outer: #0E0704;
+
+  /* Neutrals & Surfaces */
+  --bg: #120A06;
+  --bg-elevated: #1A0E08;
+  --surface-1: rgba(255, 255, 255, 0.08);
+  --surface-1-hover: rgba(255, 255, 255, 0.14);
+  --surface-2: rgba(255, 255, 255, 0.12);
+  --surface-3: rgba(255, 255, 255, 0.18);
+
+  /* Frosted Glass Hairline Borders */
+  --border-subtle: rgba(255, 255, 255, 0.18);
+  --border: rgba(255, 255, 255, 0.25);
+  --border-strong: rgba(255, 255, 255, 0.42);
+
+  /* Cream & White Typography (Never pure black text) */
+  --text: #FFF4E6;              /* Primary: Pure Crisp Cream / White */
+  --text-muted: rgba(255, 244, 230, 0.78); /* Secondary: Soft Cream */
+  --text-faint: rgba(255, 244, 230, 0.52); /* Meta/Muted: Faint Cream */
+
+  /* Primary Accent & Highlight */
+  --accent: #F0942F;
+  --accent-hover: #F8A749;
+  --accent-subtle: rgba(240, 148, 47, 0.18);
+  --on-accent: #FFFFFF;
+
+  /* Glass Highlight for Active/Selected Items */
+  --glass-active-bg: rgba(255, 255, 255, 0.26);
+  --glass-active-border: rgba(255, 255, 255, 0.65);
+
+  /* Status Colors */
+  --secondary: #F4BA5B;
+  --status-success: #34D399;
+  --status-warning: #FBBF24;
+  --status-error: #F87171;
+  --status-info: #F0942F;
+
+  /* Data-viz categorical */
+  --viz-teal: #34D399;
+  --viz-blue: #60A5FA;
+  --viz-violet: #F0942F;
+  --viz-sand: #F4BA5B;
+
+  /* EVA Route Planner Theme Hooks */
+  --eva-accent: var(--accent);
+  --eva-ok: var(--status-success);
+  --eva-bad: var(--status-error);
+  --eva-panel: rgba(255, 255, 255, 0.12);
+  --eva-line: var(--border-subtle);
+
+  /* Glassmorphism Blur & Depth */
+  --glass-blur: blur(18px);
+  --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.28), inset 0 1px 1px rgba(255, 255, 255, 0.18);
+
+  /* Typography: Rajdhani geometric tech sans */
+  --font-sans: 'Rajdhani', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Rajdhani', monospace;
+  --font-techno: 'Rajdhani', sans-serif;
+  --font-wide: 'Syncopate', 'Rajdhani', sans-serif;
+  --font-sub: 'Rajdhani', sans-serif;
+}
+
+@layer base {
+  * {
+    border-color: var(--border);
+  }
+
+  body {
+    background-color: #0E0704;
+    background-image: url('/mars-horizon-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: var(--text);
+    font-family: var(--font-sans);
+    font-size: 14px;
+    line-height: 1.5;
+    overflow-x: hidden;
+  }
+
+  button:focus-visible,
+  a:focus-visible,
+  input:focus-visible,
+  select:focus-visible,
+  textarea:focus-visible,
+  [tabindex]:focus-visible {
+    outline: 2px solid rgba(255, 255, 255, 0.7);
+    outline-offset: 2px;
+  }
+
+  select option {
+    background-color: #2C1408;
+    color: #FFF4E6;
+  }
+}
+
+/* Glassmorphism Base Cards & Panels */
+.glass-panel, .glass-card {
+  background-color: rgba(22, 11, 7, 0.62);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--border);
+  box-shadow: var(--glass-shadow);
+  border-radius: 18px;
+}
+
+.glass-card-hover {
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.glass-card-hover:hover {
+  background-color: rgba(255, 255, 255, 0.18);
+  border-color: rgba(255, 255, 255, 0.40);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.35), inset 0 1px 1px rgba(255, 255, 255, 0.25);
+}
+
+.glass-nested {
+  background-color: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--border-subtle);
+  border-radius: 14px;
+}
+
+.glass-overlay {
+  background-color: rgba(25, 12, 6, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border);
+}
+
+.glass-active {
+  background-color: var(--glass-active-bg) !important;
+  border: 1px solid var(--glass-active-border) !important;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.2), inset 0 1px 2px rgba(255, 255, 255, 0.3) !important;
+}
+
+/* Equal-width Sol / Waypoint Tiles */
+.tile-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 12px;
+  border-radius: 14px;
+  background-color: rgba(255, 255, 255, 0.10);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: all 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+  color: var(--text);
+  cursor: pointer;
+}
+
+.tile-item:hover {
+  background-color: rgba(255, 255, 255, 0.18);
+  border-color: rgba(255, 255, 255, 0.42);
+  transform: translateY(-1px);
+}
+
+.tile-item.active,
+.tile-item-active {
+  background-color: rgba(255, 255, 255, 0.28) !important;
+  border-color: rgba(255, 255, 255, 0.65) !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2), inset 0 1px 2px rgba(255, 255, 255, 0.32) !important;
+}
+
+/* Clean Glass Table */
+.glass-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+.glass-table th {
+  font-weight: 600;
+  text-align: center;
+  padding: 8px 10px;
+  color: var(--text);
+  font-size: 13px;
+  letter-spacing: 0.05em;
+}
+.glass-table td {
+  text-align: center;
+  padding: 8px 10px;
+  color: var(--text);
+  font-size: 13px;
+}
+.glass-table .row-header {
+  text-align: left;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+.glass-table .active-col {
+  background-color: rgba(255, 255, 255, 0.20);
+  border-radius: 8px;
+}
+
+/* Section labels matching reference LOCATION */
+.label-caps {
+  font-size: 11px;
+  line-height: 16px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.font-mono-tabular {
+  font-family: var(--font-sans);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Custom subtle scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.22);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.38);
+}
+
+.font-techno {
+  font-family: var(--font-techno);
+}
+
+.font-wide {
+  font-family: var(--font-wide);
+}
+
+.font-sub {
+  font-family: var(--font-sub);
+}
+
+/* Atmospheric Glowing Horizon Streak */
+.atmospheric-horizon-glow {
+  background: radial-gradient(ellipse 130% 45% at 50% 50%, rgba(255, 225, 170, 0.42) 0%, rgba(240, 148, 47, 0) 70%);
+}
+
+/* Floating Planet Shadow */
+.planet-shadow {
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0) 70%);
+  filter: blur(8px);
+}
+
+/* Keyframe animations */
+@keyframes pulseRadarRing {
+  0% {
+    transform: scale(0.9);
+    opacity: 0.8;
+  }
+  60% {
+    transform: scale(1.35);
+    opacity: 0.2;
+  }
+  100% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+}
+
+@keyframes rotateMarsSphere {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes softGlowPulse {
+  0%, 100% {
+    opacity: 0.35;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.75;
+    transform: scale(1.06);
+  }
+}
+
+@keyframes orbitRotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes marsFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+@keyframes floatDustParticles {
+  0% {
+    transform: translateY(0px) translateX(0px);
+    opacity: 0.3;
+  }
+  50% {
+    transform: translateY(-20px) translateX(12px);
+    opacity: 0.75;
+  }
+  100% {
+    transform: translateY(-40px) translateX(25px);
+    opacity: 0.2;
+  }
+}
+
+@keyframes subtleSlowZoom {
+  0% {
+    transform: scale(1.04);
+  }
+  50% {
+    transform: scale(1.0);
+  }
+  100% {
+    transform: scale(1.04);
+  }
+}
+
+.animate-pulse-radar {
+  animation: pulseRadarRing 3s cubic-bezier(0.2, 0.8, 0.2, 1) infinite;
+}
+
+.animate-rotate-mars {
+  animation: rotateMarsSphere 36s linear infinite;
+}
+
+.animate-slow-zoom {
+  animation: subtleSlowZoom 25s ease-in-out infinite;
+}
+
+.animate-soft-glow {
+  animation: softGlowPulse 4s ease-in-out infinite;
+}
+
+.animate-orbit {
+  animation: orbitRotate 14s linear infinite;
+}
+
+.animate-mars-float {
+  animation: marsFloat 6s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-rotate-mars,
+  .animate-slow-zoom,
+  .animate-pulse-radar,
+  .animate-soft-glow,
+  .animate-orbit,
+  .animate-mars-float {
+    animation: none !important;
+  }
+}
+
+/* Futuristic techno button corner tick styling */
+.tech-corner-btn {
+  position: relative;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.tech-corner-btn .corner-tick {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  pointer-events: none;
+  transition: all 0.25s ease;
+}
+
+.tech-corner-btn .corner-tick-tl {
+  top: 3px;
+  left: 3px;
+  border-top-width: 1.5px;
+  border-left-width: 1.5px;
+}
+
+.tech-corner-btn .corner-tick-tr {
+  top: 3px;
+  right: 3px;
+  border-top-width: 1.5px;
+  border-right-width: 1.5px;
+}
+
+.tech-corner-btn .corner-tick-bl {
+  bottom: 3px;
+  left: 3px;
+  border-bottom-width: 1.5px;
+  border-left-width: 1.5px;
+}
+
+.tech-corner-btn .corner-tick-br {
+  bottom: 3px;
+  right: 3px;
+  border-bottom-width: 1.5px;
+  border-right-width: 1.5px;
+}
+
+.tech-corner-btn:hover .corner-tick {
+  transform: scale(1.2);
+}
+
+@media print {
+  body {
+    background: #141211 !important;
+    color: #F2EEEA !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+}
