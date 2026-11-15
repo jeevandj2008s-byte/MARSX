@@ -5,7 +5,7 @@
 
 - 🗺️ Interactive Mars map exploration.
 -  Astronaut walking route creation.
-- 📏 Distance and mission duration calculator.
+- 📏 D
 - 🤖 AI-powered mission briefings.
 - 🔭 Scientific data integration.
 - 🌡️ Mars surface temperature display.
