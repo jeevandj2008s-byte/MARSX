@@ -30,6 +30,13 @@ MARSX is an AI-powered Mars mission planner that lets users explore Mars, create
 
 Clone the repository and follow the setup instructions below.
 
+### Prerequisites
+
+- Node.js >= 18
+- npm or yarn
+- OpenAI API key
+- NASA API key (free at [api.nasa.gov](https://api.nasa.gov))
+
 ```bash
 git clone https://github.com/jeevandj2008s-byte/MARSX.git
 cd MARSX
