@@ -7,7 +7,7 @@
 -  Astronaut walking route creation.
 - 📏 D
 - 🤖 AI-powered mission briefings.
-- 🔭 Scientific data integration.
+- 🔭 Scientific
 - 🌡️ Mars surface temperature display.
 
 ## Screenshots
