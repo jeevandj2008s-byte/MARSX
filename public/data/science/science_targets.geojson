@@ -1,0 +1,5 @@
+{
+  "type": "FeatureCollection",
+  "_instructions": "Add 3-5 source-verified targets. Coordinates are [longitude, latitude]. Every feature needs id, name, category, source, source_url, date_observed, coordinate_confidence (approximate|verified), instrument. Do NOT use invented coordinates.",
+  "features": []
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "name": "elevation",
+    "source": "REPLACE_WITH_EXACT_PRODUCT_ID",
+    "instrument": "REPLACE_WITH_INSTRUMENT",
+    "date_range": "REPLACE_WITH_PRODUCT_DATE",
+    "url": "REPLACE_WITH_SOURCE_URL",
+    "resolution_m": 200,
+    "units": "m",
+    "crs": "+proj=longlat +R=3396190 +no_defs",
+    "status": "observed (DEM product)",
+    "limitations": "Regional context; features smaller than the pixel size are unresolved."
+  },
+  {
+    "name": "slope",
+    "source": "REPLACE_WITH_EXACT_PRODUCT_ID",
+    "instrument": "REPLACE_WITH_INSTRUMENT",
+    "date_range": "REPLACE_WITH_PRODUCT_DATE",
+    "url": "REPLACE_WITH_SOURCE_URL",
+    "resolution_m": 200,
+    "units": "degrees",
+    "crs": "+proj=longlat +R=3396190 +no_defs",
+    "status": "derived from DEM",
+    "limitations": "Central-difference slope; pixel spacing converted to metres. Slope bands are prototype game thresholds, not official NASA rover safety limits."
+  },
+  {
+    "name": "aspect",
+    "source": "REPLACE_WITH_EXACT_PRODUCT_ID",
+    "instrument": "REPLACE_WITH_INSTRUMENT",
+    "date_range": "REPLACE_WITH_PRODUCT_DATE",
+    "url": "REPLACE_WITH_SOURCE_URL",
+    "resolution_m": 200,
+    "units": "degrees from north (downslope direction)",
+    "crs": "+proj=longlat +R=3396190 +no_defs",
+    "status": "derived from DEM",
+    "limitations": "Undefined (nodata) on near-flat cells."
+  },
+  {
+    "name": "roughness",
+    "source": "REPLACE_WITH_EXACT_PRODUCT_ID",
+    "instrument": "REPLACE_WITH_INSTRUMENT",
+    "date_range": "REPLACE_WITH_PRODUCT_DATE",
+    "url": "REPLACE_WITH_SOURCE_URL",
+    "resolution_m": 200,
+    "units": "m (local elevation std dev)",
+    "crs": "+proj=longlat +R=3396190 +no_defs",
+    "status": "derived from DEM",
+    "limitations": "3x3-cell window (~600 m); scale dependent."
+  },
+  {
+    "name": "hillshade",
+    "source": "REPLACE_WITH_EXACT_PRODUCT_ID",
+    "instrument": "REPLACE_WITH_INSTRUMENT",
+    "date_range": "REPLACE_WITH_PRODUCT_DATE",
+    "url": "REPLACE_WITH_SOURCE_URL",
+    "resolution_m": 200,
+    "units": "0-1 illumination",
+    "crs": "+proj=longlat +R=3396190 +no_defs",
+    "status": "derived visualisation",
+    "limitations": "Assumed sun azimuth 315, altitude 45; not a material measurement."
+  },
+  {
+    "name": "terrain_classes",
+    "source": "REPLACE_WITH_EXACT_PRODUCT_ID",
+    "instrument": "REPLACE_WITH_INSTRUMENT",
+    "date_range": "REPLACE_WITH_PRODUCT_DATE",
+    "url": "REPLACE_WITH_SOURCE_URL",
+    "resolution_m": 200,
+    "units": "class code",
+    "crs": "+proj=longlat +R=3396190 +no_defs",
+    "status": "interpreted (candidate)",
+    "limitations": "DEM-only rules with prototype thresholds; confirm with CTX/HiRISE; thresholds={\"flat_slope_deg\": 5.0, \"steep_slope_deg\": 20.0, \"mountain_relief_m\": 150.0, \"mountain_slope_deg\": 10.0, \"rough_std_m\": 15.0}"
+  }
+]

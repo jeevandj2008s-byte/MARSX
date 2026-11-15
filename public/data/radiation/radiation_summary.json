@@ -1,0 +1,11 @@
+{
+  "dataset": "Curiosity RAD historical summary",
+  "location": "Gale Crater, Mars",
+  "measurement_type": "REPLACE_WITH_EXACT_QUANTITY",
+  "value": null,
+  "unit": "REPLACE_WITH_SOURCE_UNIT",
+  "period": "REPLACE_WITH_OBSERVATION_PERIOD",
+  "source_publication": "REPLACE_WITH_CITATION",
+  "source_url": "REPLACE_WITH_URL",
+  "limitations": "Historical rover measurement; not a prediction for an astronaut."
+}
