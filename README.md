@@ -9,7 +9,6 @@
 
 ## Features
 
-
 - 🗺️ Interactive Mars map exploration.
 - 🧑‍🚀 Astronaut walking route creation.
 - 📏 Distance and mission duration calculator.
@@ -20,21 +19,18 @@
 ## Screenshots
 
 
-
 > Coming soon – interactive map view, route planner UI, and mission briefing panel.
-
-
 
 ## Tech Stack
 
-| Layer       | Technology         |
+| Layer       | Technology        |
 |-------------|-------------------|
 | Frontend    | React / Next.js   |
 | Maps        | Leaflet.js        |
 | AI          | OpenAI API        |
 | Data        | NASA Mars APIs    |
 | Styling     | Tailwind CSS      |
-
+|             |                   |
 ## Getting Started
 
 >Clone the repository and follow the setup instructions below.
@@ -47,8 +43,6 @@
 - NASA API key (free at [api.nasa.gov](https://api.nasa.gov))
 
 
-
-
 ```bash
 git clone https://github.com/jeevandj2008s-byte/MARSX.git
 cd MARSX
@@ -56,10 +50,7 @@ npm install
 npm run dev
 ```
 
-
-
 Open [http://localhost:3000](http://localhost:3000) in your browser to see the app.
-
 
 ## Environment Variables
 
@@ -84,7 +75,6 @@ MARSX/
 
 ## FAQ
 
-
 **Q: Do I need a NASA API key?**
 A: Yes, a free NASA API key can be obtained at [https://api.nasa.gov](https://api.nasa.gov).
 
@@ -92,8 +82,13 @@ A: Yes, a free NASA API key can be obtained at [https://api.nasa.gov](https://ap
 A: Node.js 18 or higher is recommended.
 
 **Q: Is MARSX free to use?**
-A: Yes, MARSX is open-source and free under the  
+A: Yes, MARSX is open-source and free under the MIT license.
 
+**Q is shreya dumb?
+
+**Q yes shreya is dumb >>>> 
+
+**Q hahahaha
 ## Roadmap
 
 - [x] Interactive Mars map
@@ -107,7 +102,6 @@ A: Yes, MARSX is open-source and free under the
 
 ## Contributing
 
-
 Contributions are welcome! Please open an issue first to discuss what you'd like to change.
 
 1. Fork the project
@@ -118,11 +112,10 @@ Contributions are welcome! Please open an issue first to discuss what you'd like
 
 ## Acknowledgements
 
-
-- [NASA Open APIs](https://api.nasa.gov/) for Mars scientific data
-- [OpenAI](https://openai.com/) for AI-powered mission briefings
-- [Leaflet.js](https://leafletjs.com/) for the interactive map framework
-- The open-source community for inspiration and tools
+- [NASA Open APIs](https://api.nasa.gov/) for Mars scientific data.
+- [OpenAI](https://openai.com/) for AI-powered mission briefings.
+- [Leaflet.js](https://leafletjs.com/) for the interactive map framework.
+- The open-source community for inspiration and tools.
 
 ## Support
 
