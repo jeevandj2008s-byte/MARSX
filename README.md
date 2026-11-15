@@ -155,6 +155,5 @@ The README lists these as project features, but the repository currently contain
 ## Perseverance Rover Facts
 
 - NASA’s Perseverance rover landed in Jezero Crater on February 18, 2021, to search for signs of ancient microbial life.
-- Perseverance collects and stores samples of Martian rock and soil (regolith) for possible return to Earth by a future mission.
 
 Source: [NASA’s Perseverance mission page](https://science.nasa.gov/mission/mars-2020-perseverance/).
