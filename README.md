@@ -120,3 +120,5 @@ MIT © MARSX Contributors
 <!-- Mission note 18: The Martian year is longer than Earth's. -->
 
 <!-- Mission note 19: Mars has a reddish surface dust. -->
+
+<!-- Mission note 20: Mars is colder than Earth on average. -->
