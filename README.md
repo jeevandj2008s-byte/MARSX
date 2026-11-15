@@ -29,6 +29,8 @@ Clone the repository and follow the setup instructions below.
 ```bash
 git clone https://github.com/jeevandj2008s-byte/MARSX.git
 cd MARSX
+npm install
+npm run dev
 ```
 
 ## License
