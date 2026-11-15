@@ -3,7 +3,7 @@
 # MARSX 
 
 
-- 🗺️ Interactive Mars map exploration.
+- 🗺️ Interactive Mars map
 -  Astronaut walking route cr
 - 📏
 - 🤖 AI-powered mission briefin
