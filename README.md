@@ -6,7 +6,7 @@
 - 🗺️ Interactive Mars map exploration.
 -  Astronaut walking route creation
 -  
-- 📏 D
+- 📏
 - 🤖 AI-powered mission briefin
 - 🔭 Scientific
 - 🌡️ Mars surface temperature display.
