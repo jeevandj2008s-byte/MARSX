@@ -122,3 +122,5 @@ MIT © MARSX Contributors
 <!-- Mission note 19: Mars has a reddish surface dust. -->
 
 <!-- Mission note 20: Mars is colder than Earth on average. -->
+
+<!-- Mission note 21: The Martian year lasts 687 Earth days. -->
