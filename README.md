@@ -66,8 +66,7 @@ A: Yes, a free NASA API key can be obtained at [https://api.nasa.gov](https://ap
 A: Node.js 18 or higher is recommended.
 
 **Q: Is MARSX free to use?**
-A: Yes, MARSX is open-source and free under the MIT license.
-
+A: Yes, MARSX is open-source and free under the MIT license
 **Q is shreya dumb?
 
 **Q yes shreya is dumb >>>> 
@@ -93,7 +92,7 @@ Contributions are welcome! Please open an issue first to discuss what you'd like
 1. Fork the project
 2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
 3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
+4. Push to the branch  feature/AmazingFeature`)
 5. Open a Pull Request
 
 ## Acknowledgements
