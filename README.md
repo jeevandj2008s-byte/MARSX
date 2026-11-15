@@ -116,3 +116,5 @@ For general questions, start a [GitHub Discussion](https://github.com/jeevandj20
 ## License
 
 MIT © MARSX Contributors
+
+<!-- Mission note 18: The Martian year is longer than Earth's. -->
