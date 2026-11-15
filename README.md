@@ -55,6 +55,18 @@ OPENAI_API_KEY=your_openai_key_here
 NASA_API_KEY=your_nasa_key_here
 ```
 
+## Project Structure
+
+```
+MARSX/
+├── components/       # Reusable React components
+├── pages/            # Next.js pages and API routes
+├── public/           # Static assets
+├── styles/           # Global and component styles
+├── utils/            # Helper functions and API clients
+└── README.md
+```
+
 ## FAQ
 
 **Q: Do I need a NASA API key?**
