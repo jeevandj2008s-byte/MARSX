@@ -98,7 +98,7 @@ A: Yes, MARSX is open-source and free under the MIT license.
 
 ## Contributing
 
-HIIGIPUVU Contributions are welcome! Please open an issue first to discuss what you'd like to change.
+Contributions are welcome! Please open an issue first to discuss what you'd like to change.
 
 1. Fork the project
 2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
@@ -132,3 +132,16 @@ MIT © MARSX Contributors
 <!-- Mission note 21: The Martian year lasts 687 Earth days. -->
 
 <!-- Mission note 22: Phobos is slowly moving closer to Mars. -->
+
+
+## How MARSX Is Intended to Work
+
+MARSX is designed to bring map exploration, route planning, Mars data, and AI-generated mission notes into one planning flow:
+
+1. **Explore Mars:** view the planet on an interactive map and choose an area for a mission.
+2. **Plan a route:** create a walking route by selecting points on the map.
+3. **Estimate the trip:** use the route to calculate its distance and an estimated mission duration.
+4. **Add Mars context:** consult scientific information, including surface temperature and data from NASA Mars APIs.
+5. **Prepare a briefing:** use the selected mission details to generate a natural-language briefing with the OpenAI API.
+
+The README lists these as project features, but the repository currently contains only the README file. This section describes the planned user workflow; it does not confirm that these features are implemented or runnable yet.
