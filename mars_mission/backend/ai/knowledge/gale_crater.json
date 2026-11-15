@@ -1,0 +1,17 @@
+{
+  "region": "Gale Crater / Mount Sharp (Aeolis Mons)",
+  "geological_context": "Gale Crater is a 154-km-diameter impact basin formed ~3.8 to 3.5 billion years ago (late Noachian to early Hesperian). At its center lies Mount Sharp (Aeolis Mons), a 5.5-km-tall mound of layered sedimentary deposits preserving billions of years of Martian climate and hydrological history.",
+  "target_features": {
+    "boxwork_ridges": "Three-dimensional networks of intersecting polygonal mineralized veins protruding 1 to 5 meters in relief above surrounding eroded mudstone bedrock.",
+    "sulfate_clay_transition": "A prominent geochemical boundary recording the planetary transition from a wetter, neutral-pH lacustrine environment (clay-rich smectites) to an evaporating hyper-saline arid climate (polyhydrated magnesium sulfates).",
+    "yardangs_and_dunes": "Wind-sculpted yardangs and localized transverse aeolian sand ridges (TARs) occupying valleys between resistant caprock layers."
+  },
+  "instruments": {
+    "hirise": "High Resolution Imaging Science Experiment (MRO): 0.25 to 0.3 m/pixel optical resolution.",
+    "mola": "Mars Orbiter Laser Altimeter (MGS): Topographical datum reference and regional elevation.",
+    "hrsc": "High Resolution Stereo Camera (Mars Express): Digital terrain models and slope gradient derivation.",
+    "themis": "Thermal Emission Imaging System (Mars Odyssey): Nighttime thermal inertia (duricrust vs loose dust). Caveat: Not a live weather forecast.",
+    "crism": "Compact Reconnaissance Imaging Spectrometer for Mars (MRO): Hyperspectral absorption bands for hydrated minerals.",
+    "rad": "Radiation Assessment Detector (MSL / Curiosity): Surface galactic cosmic ray dose rates (~25 μSv/hr nominal baseline). Caveat: Historical record does not establish future human exposure."
+  }
+}

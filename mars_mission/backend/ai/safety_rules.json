@@ -1,0 +1,105 @@
+{
+  "system": "ROVERSE Safety Critical Rules Engine",
+  "version": "2.2.0",
+  "disclaimer": "ROVERSE is a proposed educational simulation, not certified NASA flight operations. Crew and flight controllers retain sole operational authority.",
+  "slope_label": "prototype thresholds, not official NASA limits",
+  "slope_bands": {
+    "easy": {
+      "min_deg": 0.0,
+      "max_deg": 10.0,
+      "verdict": "GO",
+      "description": "Nominal terrain; low metabolic load and predictable traction."
+    },
+    "moderate": {
+      "min_deg": 10.0,
+      "max_deg": 20.0,
+      "verdict": "CAUTION",
+      "description": "Moderate grade; switchbacks and pace reduction recommended."
+    },
+    "difficult": {
+      "min_deg": 20.0,
+      "max_deg": 30.0,
+      "verdict": "CAUTION",
+      "description": "Steep scree/scarp; high slip risk and elevated O2 consumption."
+    },
+    "avoid": {
+      "min_deg": 30.0,
+      "max_deg": 90.0,
+      "verdict": "NO-GO",
+      "description": "Extreme slope grade; exceeds safe unassisted astronaut traverse envelope."
+    }
+  },
+  "terrain_speeds_ms": {
+    "flat_volcanic_plains": 0.80,
+    "flat_plains": 0.80,
+    "fractured_rough": 0.65,
+    "sand_megaripples": 0.50,
+    "flat_depot_apron": 0.70,
+    "steep_delta_scarp": 0.45,
+    "gentle_fan_plateau": 0.70,
+    "valley_channel": 0.75,
+    "outcrop_rim_approach": 0.55,
+    "default": 0.65
+  },
+  "contingency_fraction": 0.20,
+  "eva_limit_min": 480,
+  "eva_reserve_min": 30,
+  "turn_around_fraction": 0.50,
+  "tortuosity": {
+    "default": 1.00,
+    "scenarios": [1.00, 1.25, 1.40]
+  },
+  "health_red_flags": {
+    "spo2_min": 88.0,
+    "heart_rate_max": 175.0,
+    "heart_rate_min": 38.0,
+    "suit_pressure_min_kpa": 25.0,
+    "core_temp_max_c": 39.0,
+    "core_temp_min_c": 35.0
+  },
+  "health_multipliers": {
+    "fatigue_mild": {
+      "min_score": 40,
+      "pace_multiplier": 0.90,
+      "duration_multiplier": 0.95
+    },
+    "fatigue_moderate": {
+      "min_score": 60,
+      "pace_multiplier": 0.80,
+      "duration_multiplier": 0.90
+    },
+    "fatigue_high": {
+      "min_score": 75,
+      "pace_multiplier": 0.70,
+      "duration_multiplier": 0.85
+    },
+    "fatigue_critical": {
+      "min_score": 90,
+      "pace_multiplier": 0.55,
+      "duration_multiplier": 0.70,
+      "verdict": "NO-GO"
+    },
+    "dehydration": {
+      "max_hydration_pct": 85.0,
+      "duration_multiplier": 0.80
+    }
+  },
+  "radiation_limits_msv": {
+    "single_eva_nominal": 2.0,
+    "single_eva_caution": 5.0,
+    "single_eva_no_go": 10.0,
+    "thirty_day_limit": 250.0,
+    "annual_limit": 500.0
+  },
+  "comms_limits": {
+    "max_blackout_minutes": 45,
+    "caution_blackout_minutes": 20
+  },
+  "scoring_weights": {
+    "safety_margin": 0.35,
+    "time_efficiency": 0.20,
+    "energy_metabolic": 0.15,
+    "science_value": 0.20,
+    "return_risk": 0.10
+  }
+}

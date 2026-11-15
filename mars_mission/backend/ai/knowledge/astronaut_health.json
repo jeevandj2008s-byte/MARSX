@@ -1,0 +1,76 @@
+{
+  "simulation_disclaimer": "ROVERSE Health Assistant is a proposed educational simulation prototype for Mars exploration planning. It does NOT provide medical advice, diagnosis, dosing, or prescribing. In any actual terrestrial emergency, immediately contact local emergency services (e.g. 911/112).",
+  "red_flag_triggers": [
+    "chest pain",
+    "pressure in chest",
+    "heart attack",
+    "angina",
+    "trouble breathing",
+    "shortness of breath",
+    "cannot breathe",
+    "dyspnea",
+    "suffocation",
+    "oxygen alarm",
+    "o2 alarm",
+    "low oxygen",
+    "suit pressure alarm",
+    "suit pressure loss",
+    "pressure loss",
+    "decompression",
+    "depressurization",
+    "suit leak",
+    "radiation spike",
+    "rad spike",
+    "radiation alarm",
+    "rad alarm",
+    "radiation flux",
+    "ionizing radiation",
+    "critical radiation",
+    "loss of consciousness",
+    "passed out",
+    "unconscious",
+    "fainting",
+    "syncope",
+    "severe bleeding",
+    "hemorrhage",
+    "arterial bleeding",
+    "stroke",
+    "face drooping",
+    "arm weakness",
+    "slurred speech",
+    "seizure",
+    "convulsion",
+    "cyanosis",
+    "bluish lips"
+  ],
+  "emergency_action_protocol": {
+    "status": "CRITICAL_RED_FLAG_EMERGENCY",
+    "action_required": "IMMEDIATELY ABORT EVA ACTIVITY AND RETURN TO BASE AIRLOCK.",
+    "steps": [
+      "1. CEASE ALL PHYSICAL TRAVERSE AND SAMPLE COLLECTION IMMEDIATELY.",
+      "2. ACTIVATE SECONDARY OXYGEN PURGE AND STABILIZE SUIT PRESSURE TO 29.6 kPa.",
+      "3. INITIATE IMMEDIATE RETURN PROTOCOL TO BASE AIRLOCK WITH CREW BUDDY ASSIST.",
+      "4. TRANSMIT HIGHEST-PRIORITY MAYDAY / MEDICAL TELEMETRY TO MISSION CONTROL (SIMULATION).",
+      "5. IN ANY REAL EMERGENCY ON EARTH: IMMEDIATELY CALL LOCAL EMERGENCY SERVICES (911 / 112 / EMERGENCY CLINIC)."
+    ],
+    "medical_disclaimer": "This is an automated safety emergency response from the ROVERSE educational simulation. It is not medical advice."
+  },
+  "general_guidance": {
+    "hydration": {
+      "topic": "Astronaut Hydration on Surface EVA",
+      "guidelines": "Suited explorers consume 250-400 mL/hr of electrolyte-balanced water via in-suit drink bag. Avoid dehydration to maintain cognitive acuity and reduce hypothermia vulnerability. Monitor urine specific gravity pre- and post-EVA."
+    },
+    "thermal_stress": {
+      "topic": "Thermal Regulation in Mars EVA Suits",
+      "guidelines": "Martian ambient temperatures reach below -60°C. The Liquid Cooling and Ventilation Garment (LCVG) manages metabolic heat. Adjust thermoelectric heating loops for distal extremities (fingers/toes) during stationary science sampling."
+    },
+    "fatigue_and_metabolic_rate": {
+      "topic": "Metabolic Pacing and Fatigue Prevention",
+      "guidelines": "Walking on Mars gravity (0.38g) in a 120-kg suit expends ~200-350 W. Maintain cadence below 2.5 km/h on slopes exceeding 10°. Mandatory 5-minute rest breaks every 45 minutes of traverse."
+    },
+    "radiation_hygiene": {
+      "topic": "Surface Radiation Monitoring",
+      "guidelines": "Nominal GCR surface background is ~20-30 μSv/hr (MSL RAD baseline). On EVA, personal dosimeters track cumulative millisieverts. In the event of a Solar Particle Event (SPE) alert, immediately seek terrain shielding or subterranean lava tube/regolith shelter."
+    }
+  }
+}

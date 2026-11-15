@@ -1,0 +1,170 @@
+{
+  "mission": {
+    "name": "Boxwork Discovery Expedition (SAMPLE - replace with real data)",
+    "region": "Gale Crater / Mount Sharp (SAMPLE - replace with real data)",
+    "objective": "Traverse from Base Camp Curiosity Ridge across Mount Sharp lower slopes to investigate spiderweb boxwork fracture fills, proceed to the Sulfate-Clay contact zone, and safely return to base (SAMPLE - replace with real data)."
+  },
+  "location": {
+    "lat": -4.6821,
+    "lon": 137.3812,
+    "site_name": "Base Camp Curiosity Ridge (SAMPLE - replace with real data)",
+    "elevation_m": -4120.0,
+    "geological_unit": "Lower Mount Sharp Fractured Bedrock Unit (SAMPLE - replace with real data)",
+    "description": "Exploration staging ground situated on relatively smooth basaltic sandstone pediment (SAMPLE - replace with real data)."
+  },
+  "route": {
+    "route_id": "EVA-ROVERSE-01 (SAMPLE - replace with real data)",
+    "name": "Boxwork Discovery Loop (SAMPLE - replace with real data)",
+    "waypoints": [
+      {
+        "id": "wp-base",
+        "name": "Base Camp Curiosity Ridge (SAMPLE - replace with real data)",
+        "lat": -4.6821,
+        "lon": 137.3812,
+        "type": "base",
+        "elevation_m": -4120.0,
+        "sequence": 1,
+        "reason": "Mission airlock departure and initial telemetry link (SAMPLE - replace with real data)."
+      },
+      {
+        "id": "wp-boxwork",
+        "name": "Mount Sharp Boxwork Formation (SAMPLE - replace with real data)",
+        "lat": -4.6954,
+        "lon": 137.3945,
+        "type": "science",
+        "elevation_m": -4035.0,
+        "sequence": 2,
+        "reason": "Primary science target: investigate polygonal ridge networks formed by ancient subsurface groundwater cementation (SAMPLE - replace with real data)."
+      },
+      {
+        "id": "wp-contact",
+        "name": "Sulfate-Clay Transition Outcrop (SAMPLE - replace with real data)",
+        "lat": -4.7088,
+        "lon": 137.4082,
+        "type": "science",
+        "elevation_m": -4065.0,
+        "sequence": 3,
+        "reason": "Secondary science target: sample boundary between ancient wet clay era and evaporating sulfate era (SAMPLE - replace with real data)."
+      },
+      {
+        "id": "wp-return",
+        "name": "Base Camp Return Airlock (SAMPLE - replace with real data)",
+        "lat": -4.6821,
+        "lon": 137.3812,
+        "type": "return",
+        "elevation_m": -4120.0,
+        "sequence": 4,
+        "reason": "Safe return egress before reaching turn-around consumable limits (SAMPLE - replace with real data)."
+      }
+    ],
+    "segments": [
+      {
+        "from_waypoint_id": "wp-base",
+        "to_waypoint_id": "wp-boxwork",
+        "distance_km": 2.4,
+        "elevation_change_m": 85.0,
+        "max_slope_deg": 14.2,
+        "estimated_minutes": 58.0,
+        "notes": "Ascending slope through lower pediment onto boxwork scarp (SAMPLE - replace with real data)."
+      },
+      {
+        "from_waypoint_id": "wp-boxwork",
+        "to_waypoint_id": "wp-contact",
+        "distance_km": 1.6,
+        "elevation_change_m": -30.0,
+        "max_slope_deg": 8.5,
+        "estimated_minutes": 38.0,
+        "notes": "Moderate downslope traverse across layered sulfate yardangs (SAMPLE - replace with real data)."
+      },
+      {
+        "from_waypoint_id": "wp-contact",
+        "to_waypoint_id": "wp-return",
+        "distance_km": 3.2,
+        "elevation_change_m": -55.0,
+        "max_slope_deg": 11.0,
+        "estimated_minutes": 76.0,
+        "notes": "Return traverse along western flank corridor bypassing steep sand ripples (SAMPLE - replace with real data)."
+      }
+    ],
+    "totals": {
+      "distance_km": 7.2,
+      "elevation_change_m": 170.0,
+      "max_slope_deg": 14.2,
+      "estimated_minutes": 172.0
+    }
+  },
+  "science_targets": [
+    {
+      "id": "target-boxwork-1",
+      "name": "Mount Sharp Boxwork Network (SAMPLE - replace with real data)",
+      "lat": -4.6954,
+      "lon": 137.3945,
+      "description": "Complex three-dimensional network of intersecting mineralized veins protruding 1 to 5 meters above surrounding eroded bedrock (SAMPLE - replace with real data).",
+      "geology_notes": "Formed when mineral-laden groundwater circulated through fractures in lakebed mudstones. Hardened mineral veins resisted wind erosion far better than host rock, leaving blade-like ridges (SAMPLE - replace with real data)."
+    },
+    {
+      "id": "target-clay-sulfate-2",
+      "name": "Sulfate-Clay Transition Stratum (SAMPLE - replace with real data)",
+      "lat": -4.7088,
+      "lon": 137.4082,
+      "description": "Sharply delineated geological contact zone exhibiting stratified color bands between underlying smectite clays and overlying magnesium sulfates (SAMPLE - replace with real data).",
+      "geology_notes": "Records the global drying of Mars from a habitable lacustrine environment to an arid hyper-saline desert (SAMPLE - replace with real data)."
+    }
+  ],
+  "layers": {
+    "optical": {
+      "available": true,
+      "source": "HiRISE (Mars Reconnaissance Orbiter) [SAMPLE - replace with real data]",
+      "observation_date": "2024-02-18 (SAMPLE - replace with real data)",
+      "resolution": "0.25 m/pixel (SAMPLE - replace with real data)",
+      "units": "radiance/reflectance (SAMPLE - replace with real data)",
+      "value": "High-resolution orbital frame showing blade-like mineralized ridges, meter-scale basaltic float boulders, and localized transverse aeolian sand ridges (SAMPLE - replace with real data)."
+    },
+    "elevation": {
+      "available": true,
+      "source": "MOLA / HRSC Blended DTM [SAMPLE - replace with real data]",
+      "observation_date": "2021-09-10 (SAMPLE - replace with real data)",
+      "resolution": "50 m/pixel (SAMPLE - replace with real data)",
+      "units": "meters relative to Martian datum (SAMPLE - replace with real data)",
+      "value": "Traverse traverses from -4120m at base to -4035m at boxwork ridge crest (SAMPLE - replace with real data)."
+    },
+    "slope": {
+      "available": true,
+      "source": "HRSC Slope Map [SAMPLE - replace with real data]",
+      "observation_date": "2021-09-10 (SAMPLE - replace with real data)",
+      "resolution": "50 m/pixel (SAMPLE - replace with real data)",
+      "units": "degrees (SAMPLE - replace with real data)",
+      "value": "Mean gradient 7.8°; localized peak gradient of 14.2° on Boxwork ascent scarp (SAMPLE - replace with real data)."
+    },
+    "thermal": {
+      "available": true,
+      "source": "THEMIS (Mars Odyssey) [SAMPLE - replace with real data]",
+      "observation_date": "2023-10-14 (SAMPLE - replace with real data)",
+      "resolution": "100 m/pixel (SAMPLE - replace with real data)",
+      "units": "J m^-2 K^-1 s^-1/2 (Thermal Inertia) [SAMPLE - replace with real data]",
+      "value": "Surface thermal inertia ~340 units, characteristic of cemented duricrust and bedrock rather than deep loose dust (NOTE: thermal data is orbital thermal inertia, not a live temperature forecast) [SAMPLE - replace with real data]."
+    },
+    "mineralogy": {
+      "available": true,
+      "source": "CRISM (Mars Reconnaissance Orbiter) [SAMPLE - replace with real data]",
+      "observation_date": "2019-07-22 (SAMPLE - replace with real data)",
+      "resolution": "18 m/pixel (SAMPLE - replace with real data)",
+      "units": "Spectral absorption band depth [SAMPLE - replace with real data]",
+      "value": "Strong 1.9μm and 2.4μm absorption bands indicating hydrated polyhydrated sulfates and iron-rich smectite clays (SAMPLE - replace with real data)."
+    },
+    "radiation": {
+      "available": true,
+      "source": "RAD (Curiosity / Mars Science Laboratory archive) [SAMPLE - replace with real data]",
+      "observation_date": "2022-05-30 (SAMPLE - replace with real data)",
+      "resolution": "Single point sensor on rover deck (SAMPLE - replace with real data)",
+      "units": "μSv/hr [SAMPLE - replace with real data]",
+      "value": "Historical surface galactic cosmic ray background recorded ~25.2 μSv/hr (NOTE: historical measurements do not establish future astronaut exposure or predict solar particle events) [SAMPLE - replace with real data]."
+    }
+  },
+  "astronaut_constraints": {
+    "suit_oxygen_capacity_hours": 8.0,
+    "suit_power_capacity_hours": 7.0,
+    "nominal_walking_speed_kmh": 2.5,
+    "rover_supported": false
+  }
+}

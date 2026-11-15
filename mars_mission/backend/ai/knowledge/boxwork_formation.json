@@ -1,0 +1,16 @@
+{
+  "target_id": "target-boxwork-1",
+  "name": "Mount Sharp Boxwork Network",
+  "formation_mechanism": "Boxwork structures originate when tectonic or compaction stresses create an interconnected fracture web in lacustrine mudstone bedforms. Mineral-rich groundwater circulates through these open joints, precipitating resistant cements (calcium/magnesium sulfates, iron oxides, or silica). Subsequent eolian deflation strips away the softer intervening host rocks, exhuming the hard mineralized veins as blade-like standing walls.",
+  "significance": "Documents persistent late-stage subsurface groundwater circulation occurring long after surface lakes dried out in Gale Crater. Demonstrates localized habitability niches protected from surface radiation.",
+  "hypotheses": [
+    "Groundwater circulation driven by regional thermal gradient or remnant impact heat.",
+    "Mineral veins precipitated during late-stage evaporation of sulfate-saturated pore fluids.",
+    "Veins represent multiple distinct fluid pulses with varying geochemical compositions."
+  ],
+  "sampling_protocols": [
+    "Document ridge strike, dip, and polygonal cell dimensions with high-resolution stereo mast photography.",
+    "Extract rock core samples from both the resistant blade fill and the adjacent host mudstone for isotopic comparison.",
+    "Conduct in-situ alpha particle X-ray spectrometry (APXS) and Raman spectroscopy for sulfur, magnesium, and hydration bonds."
+  ]
+}

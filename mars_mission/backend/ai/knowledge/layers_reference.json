@@ -1,0 +1,52 @@
+{
+  "layers": {
+    "optical": {
+      "layer": "optical",
+      "mission": "Mars Reconnaissance Orbiter (MRO)",
+      "instrument": "HiRISE / CTX",
+      "resolution": "0.25 - 6.0 m/pixel",
+      "description": "High-resolution visible spectrum orbital imagery used for boulder field mapping, sand ripple traversability, and visual verification of polygonal ridges.",
+      "caveat": "Optical imagery cannot measure subsurface cohesion or bearing capacity without ground truth."
+    },
+    "elevation": {
+      "layer": "elevation",
+      "mission": "Mars Global Surveyor (MGS) & Mars Express (MEX)",
+      "instrument": "MOLA / HRSC",
+      "resolution": "50 - 200 m/pixel",
+      "description": "Digital elevation model referenced to the Mars Datum (areoid), measuring absolute topography and cumulative climb/descent.",
+      "caveat": "Interpolated regional DTMs may smooth out sub-meter vertical drop-offs and crevices."
+    },
+    "slope": {
+      "layer": "slope",
+      "mission": "Mars Express (MEX) / MRO",
+      "instrument": "HRSC / MOLA DTM Derivation",
+      "resolution": "50 m/pixel",
+      "description": "First-derivative terrain gradient expressed in degrees. 0-5° flat, 5-12° gentle, 12-20° steep, >20° extreme/no-go.",
+      "caveat": "Averaged over 50m baselines; micro-slopes on boulders or ridge scarps can be substantially steeper."
+    },
+    "thermal": {
+      "layer": "thermal",
+      "mission": "Mars Odyssey",
+      "instrument": "THEMIS",
+      "resolution": "100 m/pixel",
+      "description": "Orbital thermal infrared brightness temperature and derived thermal inertia (J m^-2 K^-1 s^-1/2), distinguishing cemented duricrust/bedrock (>300 units) from loose drift dust (<150 units).",
+      "caveat": "MANDATORY CAVEAT: Orbital thermal inertia reflects surface thermal property and density; it is NOT a live surface weather or temperature forecast."
+    },
+    "mineralogy": {
+      "layer": "mineralogy",
+      "mission": "Mars Reconnaissance Orbiter (MRO)",
+      "instrument": "CRISM",
+      "resolution": "18 m/pixel",
+      "description": "Hyperspectral visible/near-infrared reflectance spectroscopy detecting diagnostic absorption bands of polyhydrated sulfates, smectite clays, and crystalline hematite.",
+      "caveat": "Affected by atmospheric dust dust-cover and shadows; in-situ spectroscopic ground-truthing is required."
+    },
+    "radiation": {
+      "layer": "radiation",
+      "mission": "Mars Science Laboratory (MSL / Curiosity)",
+      "instrument": "RAD",
+      "resolution": "In-situ point detector on rover deck",
+      "description": "Historical surface measurements of Galactic Cosmic Rays (GCR) and solar particle doses (~25.2 μSv/hr nominal baseline).",
+      "caveat": "MANDATORY CAVEAT: Historical surface measurements provide baseline environmental context, but do NOT establish future human astronaut exposure or predict acute Solar Particle Events."
+    }
+  }
+}
