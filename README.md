@@ -14,6 +14,11 @@ MARSX is an AI-powered Mars mission planner that lets users explore Mars, create
 
 Clone the repository and follow the setup instructions below.
 
+```bash
+git clone https://github.com/jeevandj2008s-byte/MARSX.git
+cd MARSX
+```
+
 ## License
 
 MIT
