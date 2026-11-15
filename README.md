@@ -132,3 +132,15 @@ MIT © MARSX Contributors
 <!-- Mission note 21: The Martian year lasts 687 Earth days. -->
 
 <!-- Mission note 22: Phobos is slowly moving closer to Mars. -->
+
+
+## Mars Facts
+
+- A Martian day, called a *sol*, lasts about 24 hours and 37 minutes—close to an Earth day.
+- Mars has two small, irregularly shaped moons: Phobos and Deimos.
+- Mars looks red because iron minerals in its soil have oxidized, much like rust.
+- Olympus Mons on Mars is the largest volcano in the solar system.
+- Mars has a very thin atmosphere made mostly of carbon dioxide, so liquid water cannot remain stable on the surface for long.
+- Ancient valleys, deltas, and lakebeds show that liquid water flowed on Mars billions of years ago.
+
+Learn more from [NASA Mars Facts](https://science.nasa.gov/mars/facts/).
