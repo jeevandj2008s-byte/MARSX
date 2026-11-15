@@ -1,6 +1,6 @@
 
 
-# MARSX 🚀
+# MARSX 
 
 > AI-powered Mars mission planning at your fingertips.
 
