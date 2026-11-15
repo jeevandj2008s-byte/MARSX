@@ -1,139 +1,186 @@
+# MARS X MISSION — Planetary Mission Control & Surface Exploration System
 
+[![React](https://img.shields.io/badge/React-19.0-blue.svg)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6.svg)](https://www.typescriptlang.org/)
+[![Three.js](https://img.shields.io/badge/Three.js-WebGL-black.svg)](https://threejs.org/)
+[![OpenLayers](https://img.shields.io/badge/OpenLayers-10.4-1F6B75.svg)](https://openlayers.org/)
+[![TailwindCSS](https://img.shields.io/badge/Tailwind-4.x-38B2AC.svg)](https://tailwindcss.com/)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-# MARSX 
+An interactive mission-control workstation and planetary geospatial intelligence platform engineered for Mars surface exploration. **MARS X MISSION** provides astronaut EVA route planning, high-resolution orbital imagery analysis, 3D planetary observation, MOLA topographic relief, and AI-assisted mission briefings for Jezero Crater and beyond.
 
+---
 
-- 🗺️ Interactive Mars map
--  Astronaut walking route cr
-- 📏
-- 🤖 AI-powered mission briefin
-- 🔭 Sci
-- 🌡️ Mars surface temperature display.
+## 🚀 Key Capabilities
 
-## 
+### 1. 🪐 3D Planetary Observation
+- **Interactive Three.js WebGL Mars Globe**: High-fidelity 3D sphere with authentic 2K NASA Viking true-color albedo and MOLA (Mars Orbiter Laser Altimeter) normal relief.
+- **Dual Telemetry Modes**:
+  - `Normal Mars`: Natural surface albedo with topographic relief of Olympus Mons, Valles Marineris, and Hellas Planitia.
+  - `Thermal Mars`: Calibrated surface thermal inertia visualization showing diurnal temperature retention.
+- **Accurate Planetary Physics**: Built-in 25.19° axial obliquity and dynamic solar terminator lighting.
 
+### 2. 🗺️ Visual 360° Panoramic Map (Jezero Crater)
+- **High-Resolution Multi-Layer Orbital GIS** (powered by OpenLayers 10):
+  - **HiRISE Delta Mosaic**: Ultra-high-resolution 0.25 m/pixel mosaic covering the western delta fan deposits.
+  - **HRSC Mars Express True Color**: Multispectral color mosaic from ESA's Mars Express orbiter.
+  - **CTX Global Mosaic**: Context camera mosaic at 6 m/pixel resolution.
+  - **MOLA Elevation Contours**: Vector elevation contour overlay labeled with calibrated depths (e.g. -2500m, -2400m, -2300m).
+  - **Neretva Vallis Inflow Channels**: Precise mapping of the ancient river inflow breach.
+- **True 360° Spherical Panoramas**: Clickable surface viewpoints that open full equirectangular panoramic projections captured by NASA's Perseverance rover Mastcam-Z.
+- **Clustered Viewpoint Navigation**: Dynamic spatial clustering of rover viewpoints with smooth zoom transitions.
 
-> Coming soon – interactive map view, route planner UI, and mission briefing panel.
+### 3. 🛰️ Astronaut EVA Traverse Engineering
+- **Jezero Reference Route**: 9 verified waypoints traversing from *Octavia E. Butler Landing* across the western delta scarp (*Hawksbill Gap*), past *Three Forks*, ascending through *Neretva Vallis* to *Lookout Hill*.
+- **IAU 2000 Mars Spheroid Geodesy**: Accurate planetary distance calculations using the IAU 2000 Mars reference ellipsoid ($R = 3389.5\text{ km}$).
+- **Segment-by-Segment Telemetry**:
+  - Total cumulative distance, one-way distance, estimated traversal duration.
+  - Net elevation differential ($\Delta z$) and cumulative vertical ascent.
+- **Interactive MOLA Route Elevation Profile**: Dynamic SVG elevation cross-section chart with real-time waypoint hover markers and slope gradient telemetry.
 
-## Tech 
+### 4. 🧠 AI Mission Assistant & Briefing Compiler
+- **Server-Side Gemini Integration**: Automated generation of mission safety briefings, geological anomaly assessments, and hazard warnings.
+- **Deterministic Scientific Compiler**: Ingests real-time atmospheric dust optical depth ($\tau$), surface pressure (710 Pa), and radiation dosimetry to output actionable operational guidance.
 
-| Layer       | Technology        |
-|-------------|-------------------|
-| Frontend    | React / Next.js   |
-| Maps        | Leaflet.js        |
-| AI          | OpenA
-| Data        | NASA Mars APIs    |
-| Styling     | Tailwind CSS      |
-|             |                   |
-## Getting Started
+### 5. 🌡️ Environmental & Radiation Telemetry
+- **Diurnal Surface Temperature Modeling**: Tracks diurnal thermal swings from $-88^\circ\text{C}$ nocturnal lows to $-15^\circ\text{C}$ afternoon peaks.
+- **Atmospheric Pressure & Density**: Real-time barometric tracking across varying crater elevations.
+- **Radiation Dosimetry**: Galactic Cosmic Ray (GCR) and Solar Particle Event (SPE) tissue-equivalent dose monitoring.
 
->Clone the repository and follow the setup instructions below.
+---
 
-### Prerequisites
+## 🏗️ Architecture & Tech Stack
 
-- Node.js >= 18
-- npm or yarn
-- OpenAI API key
-- NASA API key (free at [api.nasa.gov](https://api.nasa.
-
-Open [http://localhost:3000](http://localhost:3000) in your browser to see the app.
-
-## Environment Variables
-
-Create a `.env.local` file in the root directory:
-
+```mermaid
+graph TD
+    A[Vite Client - React 19 / TypeScript] --> B[MissionContext State Engine]
+    B --> C[Cinematic Hero Landing]
+    B --> D[Visual 360° OpenLayers GIS Map]
+    B --> E[Three.js 3D Mars Globe]
+    B --> F[EVA Route Planner & Telemetry]
+    B --> G[AI Mission Briefing Assistant]
+    
+    D --> H[HiRISE / HRSC / CTX Mosaics]
+    D --> I[MOLA Contours & Channels]
+    D --> J[360° Surface Panoramas]
+    
+    E --> K[2K NASA Viking Texture & MOLA Normal Map]
+    
+    G --> L[Express Server / Gemini API Proxy]
 ```
-OPENAI_API_KEY=your_openai_key_here
-NASA_API_KEY=your_nasa_k
+
+### Frontend
+- **Framework**: React 19, TypeScript
+- **Styling**: Tailwind CSS 4, Custom Glassmorphism & Cybernetic UI
+- **3D Graphics**: Three.js (WebGL, PBR materials, OrbitControls)
+- **Mapping & GIS**: OpenLayers 10 (Custom IAU 2000 Mars projection)
+- **Icons**: Lucide React
+
+### Backend & Tooling
+- **Server**: Node.js, Express, TypeScript (`tsx`)
+- **Build System**: Vite 8, Rollup/Rolldown
+- **Geospatial Utilities**: Custom Mars ellipsoid geodesy algorithms
+- **Image Preprocessing**: Python OpenCV (CLAHE, unsharp masking, inpainting)
+
+---
+
+## 📁 Repository Structure
 
 ```
 MARSX/
-├── components/       # Reusable React components
-├── pages/            # Next.js pages and API routes
-├── public/           # Static assets
-├── styles/           # Global and component styles
-├── utils/            # Helper functions and API clients
-└── README.md
+├── public/
+│   ├── assets/
+│   │   └── jezero/             # HiRISE, HRSC, DTM, contour & channel tiles
+│   ├── models/                 # 3D Mars GLB models (Normal & Thermal)
+│   ├── panoramas/              # 360° equirectangular rover panoramas
+│   ├── hero-pristine-hd.jpg    # 2K high-definition hero background
+│   └── mars_viking_color_2k.jpg# NASA Viking true-color 2K map
+├── src/
+│   ├── components/
+│   │   ├── common/             # ErrorBoundary, GlassPanel, StatCards
+│   │   ├── dashboard/          # MissionOverview, Workstation view
+│   │   ├── landing/            # CinematicHeroLanding, RotatingMarsSphere
+│   │   ├── layout/             # TopNavigation, Sidebar, Panels
+│   │   ├── map/                # VisualMap360 (OpenLayers), MarsGlobe3D (Three.js)
+│   │   ├── route/              # RoutePlanner, ElevationProfile, Telemetry
+│   │   ├── terrain/            # TerrainIntelligence, GeomorphicUnits
+│   │   └── ai/                 # MarsAIPanel, MissionBriefing
+│   ├── context/                # MissionContext (Global exploration state)
+│   ├── data/                   # MarsMissionData, JezeroWaypoints, Regions
+│   ├── types/                  # Mission, Geospatial, and Telemetry TypeScript interfaces
+│   └── utils/                  # marsGeospatial (IAU 2000 geodesy, elevation)
+├── server.ts                   # Express application & Gemini API bridge
+├── vite.config.ts              # Vite configuration
+├── package.json                # Project dependencies and scripts
+└── README.md                   # Project documentation
 ```
 
-## FAQ
+---
 
-**Q: Do I need a NASA API key?**
-A: Yes, a free NASA API key can be obtained at [https://api.nasa.gov](https://api.nasa.gov).
+## 🛠️ Getting Started
 
-**Q: Which Node.js version is required?**
-A: Node.js 18 or higher is recommended.
+### Prerequisites
+- **Node.js**: v18.0.0 or higher
+- **npm** or **bun**
 
-**Q: Is MARSX free to use?**
-A: Yes, MARSX is open-source and free under the MIT license
+### Installation
 
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/jeevandj2008s-byte/MARSX.git
+   cd MARSX
+   ```
 
-**Q was there any ai
-## Roadmap
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
 
-- [x] Interactive Mars map.
-- [x] Route planner.
-- [x] AI mission briefings.
-- [ ] Real-time Mars weather integration.
-- [ ] Multiplayer mission planning.
-- [ ] 3D terrain visualisation.
-- [ ] Offline mode support.
-- [ ] Mission history export (PDF/CSV).
+3. **Configure Environment Variables**:
+   Copy the example environment template:
+   ```bash
+   cp .env.example .env
+   ```
+   *(Optional)* Add your Gemini API key in `.env` if you wish to use live AI assistant generation:
+   ```env
+   GEMINI_API_KEY="your-gemini-api-key-here"
+   APP_URL="http://localhost:3000"
+   ```
 
-## Contributing
+### Running Locally
 
-Contributions are welcome! Please open an issue first to discuss what you'd like to change.
+- **Development server** (Starts frontend Vite dev server with Express backend):
+  ```bash
+  npm run dev
+  ```
+  Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-1. Fork the project
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch  feature/AmazingFeature`)
-5. Open a Pull Request
+- **Typecheck & Linting**:
+  ```bash
+  npm run lint
+  ```
 
-## Acknowledgements
+- **Production Build**:
+  ```bash
+  npm run build
+  ```
 
-- [NASA Open APIs](https://api.nasa.gov/) for Mars scientific data.
-- [OpenAI](https://openai.com/) for AI-powered mission briefings.
-- [Leaflet.js](https://leafletjs.com/) for the interactive map framework.
-- The open-source community for inspiration and tools.
+- **Preview Production Build**:
+  ```bash
+  npm run preview
+  ```
 
-## Support
+---
 
-If you find a bug or have a feature request, please [open an issue](https://github.com/jeevandj2008s-byte/MARSX/issues).
+## 🔒 Security & Privacy
 
-For general questions, start a [GitHub Discussion](https://github.com/jeevandj2008s-byte/MARSX/discussions).
+This project strictly adheres to security best practices:
+- No API keys, credentials, or private authentication tokens are stored in source code.
+- `.env` and local secrets are excluded via `.gitignore`.
+- All client-side requests to external AI APIs route through server-side environment variable injection.
 
-## License
+---
 
-MIT © MARSX Contributors
+## 📄 License
 
-<!-- Mission note 18: The Martian year is longer than Earth's. -->
-
-<!-- Mission note 19: Mars has a reddish surface dust. -->
-
-<!-- Mission note 20: Mars is colder than Earth on average. -->
-
-<!-- Mission note 21: The Martian year lasts 687 Earth days. -->
-
-<!-- Mission note 22: Phobos is slowly moving closer to Mars. -->
-
-
-  
-## How MARSX Is Intended to Work
-
-MARSX is designed to bring map exploration, route planning, Mars data, and AI-generated mission notes into one planning flow:
-
-1. **Explore Mars:** view the planet on an interactive map and choose an area for a mission.
-2. **Plan a route:** create a walking route by selecting points on the map.
-3. **Estimate the trip:** use the route to calculate its distance and an estimated mission duration.
-4. **Add Mars context:** consult scientific information, including surface temperature and data from NASA Mars APIs.
-5. **Prepare a briefing:** use the selected mission details to generate a natural-language briefing with the OpenAI API.
-
-The README lists these as project features, but the repository currently contains only the README file. This section describes the planned user workflow; it does not confirm that these features are implemented or runnable yet.
-
-
-## Perseverance Rover Facts
-
-- NASA’s Perseverance rover landed in Jezero Crater on February 18, 2021, to search for signs of ancient microbial life.
-
-Source: [NASA’s Perseverance mission page](https://science.nasa.gov/mission/mars-2020-perseverance/).
+This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
