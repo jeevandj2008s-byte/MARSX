@@ -93,14 +93,14 @@ A: Yes, MARSX is open-source and free under the MIT license.
 **Q was there any ai
 ## Roadmap
 
-- [x] Interactive Mars map
-- [x] Route planner
-- [x] AI mission briefings
-- [ ] Real-time Mars weather integration
-- [ ] Multiplayer mission planning
-- [ ] 3D terrain visualisation
-- [ ] Offline mode support
-- [ ] Mission history export (PDF/CSV)
+- [x] Interactive Mars map.
+- [x] Route planner.
+- [x] AI mission briefings.
+- [ ] Real-time Mars weather integration.
+- [ ] Multiplayer mission planning.
+- [ ] 3D terrain visualisation.
+- [ ] Offline mode support.
+- [ ] Mission history export (PDF/CSV).
 
 ## Contributing
 
