@@ -8,7 +8,7 @@
 -  
 - 📏
 - 🤖 AI-powered mission briefin
-- 🔭 Scientific
+- 🔭 Sci
 - 🌡️ Mars surface temperature display.
 
 ## 
