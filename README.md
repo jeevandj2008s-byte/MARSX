@@ -12,6 +12,10 @@ MARSX is an AI-powered Mars mission planner that lets users explore Mars, create
 - 🤖 AI-powered mission briefings
 - 🔭 Scientific data integration
 
+## Screenshots
+
+> Coming soon – interactive map view, route planner UI, and mission briefing panel.
+
 ## Tech Stack
 
 | Layer       | Technology         |
