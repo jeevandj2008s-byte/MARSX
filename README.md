@@ -22,7 +22,7 @@
 |-------------|-------------------|
 | Frontend    | React / Next.js   |
 | Maps        | Leaflet.js        |
-| AI          | OpenAI API        |
+| AI          | OpenA
 | Data        | NASA Mars APIs    |
 | Styling     | Tailwind CSS      |
 |             |                   |
