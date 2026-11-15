@@ -87,6 +87,13 @@ Contributions are welcome! Please open an issue first to discuss what you'd like
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
+## Acknowledgements
+
+- [NASA Open APIs](https://api.nasa.gov/) for Mars scientific data
+- [OpenAI](https://openai.com/) for AI-powered mission briefings
+- [Leaflet.js](https://leafletjs.com/) for the interactive map framework
+- The open-source community for inspiration and tools
+
 ## License
 
-MIT
+MIT © MARSX Contributors
