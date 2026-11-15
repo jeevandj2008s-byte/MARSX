@@ -44,10 +44,7 @@ Create a `.env.local` file in the root directory:
 
 ```
 OPENAI_API_KEY=your_openai_key_here
-NASA_API_KEY=your_nasa_key_here
-```
-
-## Project Structure
+NASA_API_KEY=your_nasa_k
 
 ```
 MARSX/
