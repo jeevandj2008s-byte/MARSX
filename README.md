@@ -135,6 +135,7 @@ MIT © MARSX Contributors
 <!-- Mission note 22: Phobos is slowly moving closer to Mars. -->
 
 
+  
 ## How MARSX Is Intended to Work
 
 MARSX is designed to bring map exploration, route planning, Mars data, and AI-generated mission notes into one planning flow:
