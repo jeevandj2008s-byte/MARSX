@@ -4,7 +4,8 @@
 
 
 - 🗺️ Interactive Mars map exploration.
--  Astronaut walking route creation.
+-  Astronaut walking route creation
+-  
 - 📏 D
 - 🤖 AI-powered mission briefings.
 - 🔭 Scientific
