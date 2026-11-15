@@ -66,9 +66,9 @@ A: Node.js 18 or higher is recommended.
 
 **Q: Is MARSX free to use?**
 A: Yes, MARSX is open-source and free under the MIT license
-**Q is shreya dumb?
+**Q is ravi dead?
 
-**Q yes shreya is dumb >>>> 
+**Q yes ravi was killed by shreya .>>>> 
 
 **Q hahahaha
 
