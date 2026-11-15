@@ -106,6 +106,12 @@ Contributions are welcome! Please open an issue first to discuss what you'd like
 - [Leaflet.js](https://leafletjs.com/) for the interactive map framework
 - The open-source community for inspiration and tools
 
+## Support
+
+If you find a bug or have a feature request, please [open an issue](https://github.com/jeevandj2008s-byte/MARSX/issues).
+
+For general questions, start a [GitHub Discussion](https://github.com/jeevandj2008s-byte/MARSX/discussions).
+
 ## License
 
 MIT © MARSX Contributors
