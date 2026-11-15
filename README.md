@@ -3,7 +3,7 @@
 
 > AI-powered Mars mission planning at your fingertips.
 
-MARSX is the first-ever AI-powered Mars mission planner that lets users explore the planet Mars, create astronaut walking routes, calculate distances and mission durations, and generate AI-powered mission briefings using interactive maps and scientific data...
+>MARSX is the first-ever AI-powered Mars mission planner that lets users explore the planet Mars, create astronaut walking routes, calculate distances and mission durations, and generate AI-powered mission briefings using interactive maps and scientific data...
 
 ## Features
 
@@ -30,7 +30,7 @@ MARSX is the first-ever AI-powered Mars mission planner that lets users explore 
 
 ## Getting Started
 
-Clone the repository and follow the setup instructions below.
+>Clone the repository and follow the setup instructions below.
 
 ### Prerequisites
 
@@ -98,7 +98,7 @@ A: Yes, MARSX is open-source and free under the MIT license.
 
 ## Contributing
 
-Contributions are welcome! Please open an issue first to discuss what you'd like to change.
+HIIGIPUVU Contributions are welcome! Please open an issue first to discuss what you'd like to change.
 
 1. Fork the project
 2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
@@ -132,15 +132,3 @@ MIT © MARSX Contributors
 <!-- Mission note 21: The Martian year lasts 687 Earth days. -->
 
 <!-- Mission note 22: Phobos is slowly moving closer to Mars. -->
-
-
-## Mars Facts
-
-- A Martian day, called a *sol*, lasts about 24 hours and 37 minutes—close to an Earth day.
-- Mars has two small, irregularly shaped moons: Phobos and Deimos.
-- Mars looks red because iron minerals in its soil have oxidized, much like rust.
-- Olympus Mons on Mars is the largest volcano in the solar system.
-- Mars has a very thin atmosphere made mostly of carbon dioxide, so liquid water cannot remain stable on the surface for long.
-- Ancient valleys, deltas, and lakebeds show that liquid water flowed on Mars billions of years ago.
-
-Learn more from [NASA Mars Facts](https://science.nasa.gov/mars/facts/).
